@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /*outline: 3px solid #61dafb;*/
+  width: 90%;
+  margin: 0 auto;
+
+
+  .logo-div {
+    display: flex;
+    flex-direction: row;
+
+
+    .logo {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3em;
+      font-weight: bolder;
+      user-select: none;
+    }
+
+    .logo-letter-p {
+      color: var(--primary-color);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4rem;
+      font-weight: bolder;
+      transition: 250ms;
+
+    }
+
+    .logo-letter-p:hover {
+      color: white;
+      transition: 250ms;
+      cursor: default;
+    }
+
+    .logo-letter-s {
+      color: white;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4rem;
+      font-weight: bolder;
+      transition: 250ms;
+    }
+
+    .logo-letter-s:hover {
+      color: var(--primary-color);
+      transition: 250ms;
+      cursor: default;
+    }
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  nav ul li {
+    list-style: none;
+    padding: 1em;
+
+
+    .nav-btn {
+      padding: 0.5em 1.5em;
+      color: var(--primary-color);
+      border-bottom: 5px solid white;
+      margin: 0 0.5em;
+      font-size: 23px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-btn:link,
+    .nav-btn:visited {
+      display: inline-block;
+      font-size: 1.1rem;
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--primary-color);
+      padding: 1rem 3rem;
+      text-transform: uppercase;
+      border-bottom: 5px solid var(--primary-color);
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--primary-color) 50%);
+      background-size: 230%;
+      transition: all 300ms;
+    }
+
+    .nav-btn:hover {
+      background-position: 100%;
+      color: black;
+      font-weight: 700;
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2)
+    }
+  }
+}

@@ -2,4 +2,17 @@
   margin: 0;
   padding: 0;
   font-family: 'Comfortaa', cursive;
+  background-color: var(--background-color);
 }
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+:root{
+  --primary-color: #8b3ef1;
+  --secondary-color: #ffffff;
+  --background-color: #333333;
+}
+
+
