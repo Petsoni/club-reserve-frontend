@@ -1,0 +1,38 @@
+.homepage-wrapper {
+  .start-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title-wrapper {
+
+      .title {
+        z-index: 2;
+        font-size: 7rem;
+        font-weight: bolder;
+        color: var(--primary-color);
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .card-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+      width: 25%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 5em;
+    }
+  }
+}
