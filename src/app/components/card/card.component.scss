@@ -1,4 +1,84 @@
-.card-wrapper {
-  width: 100%;
-  outline: 1px solid black;
+.card {
+  position: relative;
+  width: 35rem;
+  height: 20rem;
+  background-position: 50% 50%;
+  background-size: 125%;
+  transition: background 400ms ease;
+  box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.03), 0 22.3px 17.9px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+
+  &:hover {
+    .card-content {
+      transform: translateY(0px);
+
+    }
+  }
+
+  &--club {
+    background-size: 110%;
+
+    &:hover {
+      background-position: 50% -100%;
+    }
+
+    .card-content {
+      top: 0;
+      transform: translateY(-110px);
+    }
+  }
+
+  &--club {
+    .card-content {
+      width: 100%;
+      height: 80px;
+      padding: 15px 20px;
+    }
+  }
+
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    background: var(--background-secondary-color);
+    transition: transform 400ms ease;
+    color: white;
+
+    .description {
+      color: rgb(226, 226, 226);
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+
+      .title {
+        margin: 0 0 0.5rem 0;
+        font-weight: bolder;
+        font-size: x-large;
+        letter-spacing: 1px;
+        color: var(--secondary-color);
+      }
+
+      .address {
+        color: white;
+        font-size: medium;
+        margin: 0.2em 0;
+      }
+
+      .rating {
+        display: flex;
+        align-items: center;
+        margin-top: 0.3rem;
+        font-weight: bolder;
+
+        .grade {
+          color: gold;
+          margin: 0 5px;
+          font-size: small;
+        }
+      }
+
+    }
+  }
 }

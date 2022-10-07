@@ -1,14 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Comfortaa', cursive;
-  background-color: var(--background-color);
-}
-
 html, body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  font-family: 'Comfortaa', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   user-select: none;
@@ -24,17 +18,24 @@ html, body {
 }
 
 :root {
+  /*Variant 1*/
   --primary-color: #00FFF5;
   --secondary-color: #00ADB5;
+
+  /*Variant 2*/
+  /*--primary-color: #ff6600;*/
+  /*--secondary-color: #ff9947;*/
+
   --background-color: #222831;
   --background-secondary-color: #393E46;
 }
 
 .material-symbols-outlined {
-  font-variation-settings: 'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
 }
 
 
