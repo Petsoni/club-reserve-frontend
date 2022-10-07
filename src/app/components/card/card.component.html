@@ -1,0 +1,9 @@
+<div class="card-wrapper" *ngFor="let club of clubs">
+  <div class="card-title">
+    <h2>{{club.name}}</h2>
+  </div>
+  <div class="card-description">
+    <h4>{{club.address}}</h4>
+    <p>{{club.rating}}<span class="material-symbols-outlined">grade</span></p>
+  </div>
+</div>
